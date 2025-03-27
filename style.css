@@ -72,8 +72,40 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+/* CSS RESET 👆 */
+/* CSS STYLE 👇 */
 :root {
   ---gray: #97a4be;
   ---cyan: #00fff0;
   ---navy: #223047;
+}
+* {
+  font-family: 'Dosis', sans-serif;
+}
+body {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: var(---navy);
+  padding: 20px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+.wrapper ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+button {
+  background-color: #00fff0;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
 }
